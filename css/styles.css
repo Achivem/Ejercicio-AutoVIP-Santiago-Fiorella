@@ -21,8 +21,8 @@
 }
 .abs {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 10%;
+  left: 8%;
   background-color: orange;
   color: white;
   padding: 0px 8px;

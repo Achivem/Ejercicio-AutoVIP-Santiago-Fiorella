@@ -13,6 +13,7 @@
     />
   </head>
   <body class="pt-5">
+    <!-- Trabajo en duplas de Santiago Portos y Fiorella Ordenes -->
     <div class="mb-5">
       <nav
         class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark nav-border"
@@ -49,7 +50,12 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -171,7 +177,7 @@
                   <img
                     src="img/cars_sales/audi_q5_2017.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -263,7 +269,7 @@
                   <img
                     src="img/cars_sales/audi_q7_2017.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -355,7 +361,7 @@
                   <img
                     src="img/cars_sales/audi_a6_quattro_2016.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -447,8 +453,8 @@
                   <img
                     src="img/cars_sales/audi_r8_2016.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
-                    alt="Audi Q5"
+                    style="max-height: 180px; width: 100%"
+                    alt="Audi R8"
                   />
                 </div>
                 <div class="col-md-8 p-3">
@@ -539,8 +545,8 @@
                   <img
                     src="img/cars_sales/bentley_continental_gt_speed_2014.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
-                    alt="Audi Q5"
+                    style="max-height: 180px; width: 100%"
+                    alt="Bentley C GT S"
                   />
                 </div>
                 <div class="col-md-8 p-3">
@@ -631,7 +637,7 @@
                   <img
                     src="img/cars_sales/bmw_750li_2016.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -723,7 +729,7 @@
                   <img
                     src="img/cars_sales/bmw_m8_2014.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -815,7 +821,7 @@
                   <img
                     src="img/cars_sales/jaguar_xj_2017.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -907,7 +913,7 @@
                   <img
                     src="img/cars_sales/volvo_s60_2016.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -999,7 +1005,7 @@
                   <img
                     src="img/cars_sales/volvo_s90_2016.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -1091,7 +1097,7 @@
                   <img
                     src="img/cars_sales/volvo_xc60_2017.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -1183,7 +1189,7 @@
                   <img
                     src="img/cars_sales/volvo_xc90_2015.jpg"
                     class="img-fluid rounded p-2 border border"
-                    style="max-height: 180px; width: auto"
+                    style="max-height: 180px; width: 100%"
                     alt="Audi Q5"
                   />
                 </div>
@@ -1268,7 +1274,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-black w-100 pb-5 nav-border-top">
+    <div class="bg-black w-100 pb-5 nav-border-top mt-5">
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
@@ -1319,6 +1325,56 @@
               Copyright &#169; AutoVIP 2023
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-lg" id="contactModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contacto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Ingresar nombre completo..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresar Email..."
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  id="message"
+                  rows="8"
+                  style="width: 100%"
+                  placeholder="Ingresar mensaje..."
+                  class="form-control"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
