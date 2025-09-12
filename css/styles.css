@@ -1,3 +1,33 @@
 .nav-border {
   border-bottom: solid 5px orange;
 }
+.linea-divisoria {
+  border: none;
+  border-top: 1px solid #beb9b99d;
+  margin-bottom: 2rem 0;
+}
+.exchange-rate {
+  font-size: 1rem;
+  color: #555;
+
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+.nav-border-top {
+  border-top: solid 5px orange;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: orange;
+  color: white;
+  padding: 0px 8px;
+  border-radius: 2px;
+}
+.tex {
+  font-size: 0.7rem;
+}
